@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="incident_task" label="Supplier Incident" max_length="40" name="x_235145_supplier_supplier_incident_task" type="collection"/>
+</database>
