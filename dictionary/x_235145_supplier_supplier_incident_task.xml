@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="incident_task" label="Supplier Incident" max_length="40" name="x_235145_supplier_supplier_incident_task" type="collection"/>
+    <element extends="incident_task" label="Supplier Incident" max_length="40" name="x_235145_supplier_supplier_incident_task" type="collection">
+        <element label="Caller ID" max_length="32" name="caller_id" reference="sys_user" type="reference"/>
+        <element label="Copy attachments" max_length="40" name="copy_attachments" type="boolean"/>
+        <element label="Copy worknotes" max_length="40" name="copy_worknotes" type="string"/>
+        <element label="Supplier" max_length="32" name="supplier" reference="core_company" type="reference"/>
+        <element label="Vendor state" max_length="40" name="vendor_state" type="string"/>
+    </element>
 </database>
